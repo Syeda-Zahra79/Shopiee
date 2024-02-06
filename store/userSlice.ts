@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  user: typeof window !== 'undefined' ? JSON.parse(localStorage.getItem("user_data") as any) 
+  user: typeof window !== 'undefined'  ? JSON.parse(localStorage.getItem("user_data") as any) 
     : {
         user_name: "",
         email: "",

@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  items: JSON.parse(localStorage.getItem("items") as any) ? JSON.parse(localStorage.getItem("items") as any)
+  items: typeof window !== 'undefined' && JSON.parse(localStorage.getItem("items") as any) ? JSON.parse(localStorage.getItem("items") as any)
     : [],
   totalPrice: 0,
 };
