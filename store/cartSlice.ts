@@ -11,8 +11,6 @@ const cartSlice: any = createSlice({
   initialState,
   reducers: {
     addItem: (state, { payload }) => {
-      // console.log(payload.id);
-      // console.log(state.items);
       let findProductExists = false;
       for (let i in state.items) {
         if (payload.id == state.items[i].id) {
