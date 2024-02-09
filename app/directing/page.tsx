@@ -1,4 +1,4 @@
-
+'use client'
 import { useRouter } from "next/navigation";
 import { POST } from "../api/send/route";
 import Link from "next/link";
