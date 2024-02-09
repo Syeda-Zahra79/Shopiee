@@ -1,15 +1,15 @@
 
-
 import { useRouter } from "next/navigation";
 import { POST } from "../api/send/route";
 import Link from "next/link";
 
 const directing = () => {
+  const router = useRouter()
   POST();
 
-//   setTimeout(() => {
-//     router.push("/");
-//   }, 10000);
+  setTimeout(() => {
+    router.push("/");
+  }, 10000);
 
 
   return (

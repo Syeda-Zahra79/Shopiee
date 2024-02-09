@@ -25,6 +25,7 @@ const login = () => {
   const checkData = () => {
     if (user_name == undefined || password == undefined) {
       alert("Create Account First");
+      router.push("/signIn")
     } else if (username == user_name && pass == password) {
       router.back();
     }
