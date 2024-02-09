@@ -41,7 +41,6 @@ const SignIn = () => {
   };
 
   const handleSubmission = () => {
-    console.log("i am clicked");
     const data = {
       f_name: f_name,
       l_name: l_name,

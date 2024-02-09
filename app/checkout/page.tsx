@@ -78,7 +78,6 @@ const checkout = () => {
               type="text"
               value={f_name}
               onChange={(e) => setFName(e.target.value)}
-              required
             />
           </Span>
 
@@ -88,7 +87,6 @@ const checkout = () => {
               type="text"
               value={l_name}
               onChange={(e) => setLName(e.target.value)}
-              required
             />
           </Span>
         </InputContainer>
@@ -100,7 +98,6 @@ const checkout = () => {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              required
             />
           </Span>
 
@@ -110,7 +107,6 @@ const checkout = () => {
               type="number"
               value={phone}
               onChange={(e: any) => setPhone(e.target.value)}
-              required
             />
           </Span>
         </MiddleInputContainer>
@@ -122,7 +118,6 @@ const checkout = () => {
               type="text"
               value={country}
               onChange={(e) => setCountry(e.target.value)}
-              required
             />
           </Span>
 
@@ -132,7 +127,6 @@ const checkout = () => {
               type="text"
               value={city}
               onChange={(e) => setCity(e.target.value)}
-              required
             />
           </Span>
 
@@ -142,7 +136,6 @@ const checkout = () => {
               type="text"
               value={address}
               onChange={(e) => setAddress(e.target.value)}
-              required
             />
           </Span>
         </InputContainer>
@@ -172,11 +165,11 @@ const checkout = () => {
 
           <ButtonContainer>
             {creditFlag == true ? (
-              <Link href="billing">
+              <Link href="billing" className="z-50">
                 <Button onClick={handleSubmission}>Save Changes</Button>
               </Link>
             ) : (
-              <Link href="directing">
+              <Link href="directing" className="z-50">
                 <Button onClick={handleSubmission}>Save Changes</Button>
               </Link>
             )}

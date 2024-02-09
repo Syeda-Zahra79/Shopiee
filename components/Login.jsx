@@ -17,13 +17,15 @@ import {
 
 const login = () => {
   const { user_name, password } = useSelector((state) => state.user.user);
+
+  console.log(user_name, password );
   const router = useRouter();
 
   const [username, setUserName] = useState("");
   const [pass, setPass] = useState("");
 
   const checkData = () => {
-    if (user_name == undefined || password == undefined) {
+    if (user_name == "" || password == "") {
       alert("Create Account First");
       router.push("/signIn")
     } else if (username == user_name && pass == password) {

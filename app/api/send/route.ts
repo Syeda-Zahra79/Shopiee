@@ -9,7 +9,7 @@ export async function POST() {
     const data = await resend.emails.send({
       from: 'Acme <onboarding@resend.dev>',
       to: ['85999bbc@gmail.com'],
-      subject: 'Hello world',
+      subject: 'Shopping Receipt',
       react: EmailTemplate(),
     });
 
