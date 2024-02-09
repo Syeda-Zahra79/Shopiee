@@ -7,10 +7,6 @@ const directing = () => {
   const router = useRouter()
   POST();
 
-  setTimeout(() => {
-    router.push("/");
-  }, 10000);
-
 
   return (
     <div className="directingContainer">
