@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import styled from "styled-components";
 import { device } from "@/models/devices";
+import './globals.css';
 
 const Container = styled.div`
   position: absolute;
