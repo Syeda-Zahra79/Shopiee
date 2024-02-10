@@ -17,7 +17,7 @@ export const Container = styled.div`
   align-items: center;
   width: 70%;
   padding: 0.5em 2em;
-  overflow-x: auto;
+  overflow-x: hidden;
   overflow-y: hidden;
   scroll-behavior: smooth;
   white-space: nowrap;

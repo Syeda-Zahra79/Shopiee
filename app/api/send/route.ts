@@ -2,7 +2,7 @@
 import EmailTemplate from '@/components/Email-Template';
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend("re_j6mFZVqA_HNB7YaKKXDtXwQhhiPnRZvzN");
 
 export async function POST() {
   try {
@@ -15,6 +15,7 @@ export async function POST() {
 
     return Response.json(data);
   } catch (error) {
+    console.log("Error : ", error);
     return Response.json({ error });
   }
 }

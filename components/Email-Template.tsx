@@ -16,9 +16,6 @@ import {
   import * as React from 'react';
   
  
-  const baseUrl = process.env.VERCEL_URL
-    ? `https://${process.env.VERCEL_URL}`
-    : '';
   
     const date = new Date() as any;
   export const EmailTemplate = () => (
@@ -45,14 +42,7 @@ import {
             style={{ ...paddingX, paddingTop: '40px', paddingBottom: '40px' }}
           >
             <Row>
-              <Column>
-                <Img
-                  src={`${baseUrl}/static/nike-product.png`}
-                  alt="Brazil 2022/23 Stadium Away Women's Nike Dri-FIT Soccer Jersey"
-                  style={{ float: 'left' }}
-                  width="260px"
-                />
-              </Column>
+             
               <Column style={{ verticalAlign: 'top', paddingLeft: '12px' }}>
                 <Text style={{ ...paragraph, fontWeight: '500' }}>
                   Brazil 2022/23 Stadium Away Women's Nike Dri-FIT Soccer Jersey
@@ -99,14 +89,6 @@ import {
             <Row style={menu.tel}>
               <Column>
                 <Row>
-                  <Column style={{ width: '16px' }}>
-                    <Img
-                      src={`${baseUrl}/static/nike-phone.png`}
-                      width="16px"
-                      height="26px"
-                      style={{ paddingRight: '14px' }}
-                    />
-                  </Column>
                   <Column>
                     <Text style={{ ...menu.text, marginBottom: '0' }}>
                       1-800-806-6453
